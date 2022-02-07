@@ -18,12 +18,6 @@ const validation = (obj, val) => {
             } else {
                 return {valid: true, text: null};
             }
-        case "password":
-            if (val.length < 8) {
-                return { validation: {valid: false, text:<p>Password must have at least 8 characters</p>}, pass: null}
-            } else {
-                return { validation: {valid: true, text: null}, pass: val };
-            }
         default:
             return null;    
     }
