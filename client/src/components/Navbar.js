@@ -1,38 +1,59 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./styles.css";
+import images from "../constants/images";
+import "./styles/Navbar/Navbar.css";
 
 const Navbar = () => {
   return (
-    <div className="navBar">
-      <Link className="links" to={"/"}>
-        <h1>MERNstaurant</h1>
-      </Link>
-      <Link id="navLinks" className="links" to={"/"}>
-        Promotions
-      </Link>
-      <Link className="links" to={"/"}>
-        Menu
-      </Link>
-      <Link className="links" to={"/"}>
-        Reserve
-      </Link>
-      <Link className="links" to={"/"}>
-        Gallery
-      </Link>
-      <Link className="links" to={"/"}>
-        Drinks
-      </Link>
-      <Link className="links" to={"/"}>
-        Happy Hours
-      </Link>
-      <Link className="links" to={"/"}>
-        Party
-      </Link>
-      <Link className="links" to={"/"}>
-        About Us
-      </Link>
-    </div>
+    <nav className="navBar">
+      <div className="navBar-logo">
+        <Link className="links" to={"/"}>
+          <img src={images.logo} alt="navBar__logo" />
+        </Link>
+      </div>
+      <ul className="navBar-links">
+        <li>
+          <Link id="navLinks" className="links" to={"/"}>
+            Promotions
+          </Link>
+        </li>
+        <li>
+          <Link className="links" to={"/"}>
+            Menu
+          </Link>
+        </li>
+        <li>
+          <Link className="links" to={"/"}>
+            Reserve
+          </Link>
+        </li>
+        <li>
+          <Link className="links" to={"/"}>
+            Gallery
+          </Link>
+        </li>
+        <li>
+          <Link className="links" to={"/"}>
+            Drinks
+          </Link>
+        </li>
+        <li>
+          <Link className="links" to={"/"}>
+            Happy Hours
+          </Link>
+        </li>
+        <li>
+          <Link className="links" to={"/"}>
+            Party
+          </Link>
+        </li>
+        <li>
+          <Link className="links" to={"/"}>
+            About Us
+          </Link>
+        </li>
+      </ul>
+    </nav>
   );
 };
 
