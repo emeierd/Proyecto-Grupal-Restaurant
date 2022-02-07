@@ -72,7 +72,8 @@ const Reserve = () => {
     }
     return (
         <>
-            <input type={"number"} defaultValue={personas} min={"2"} max={"8"} onChange={e => personasChange(e)} />
+            <label htmlFor='number'>n° personas</label>
+            <input type={"number"} name="number" defaultValue={personas} min={"2"} max={"8"} onChange={e => personasChange(e)} />
             <DatePicker
                 selected={startDate}
                 onChange={date => onDatePick(date)}
