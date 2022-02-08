@@ -6,7 +6,7 @@ import Gallery from "../components/Gallery";
 import HappyHours from "../components/HappyHours";
 import Header from "../components/Header";
 import MenuSection from "../components/MenuSection";
-import Navbar from "../components/Navbar";
+import NavBar from "../components/Navbar";
 import Party from "../components/Party";
 import PromoCarousel from "../components/PromoCarousel";
 import Reserve from "../components/Reserve";
@@ -14,15 +14,15 @@ import Reserve from "../components/Reserve";
 const Home = () => {
   return (
     <>
-      <Navbar />
+      <NavBar />
       <Header />
       <PromoCarousel />
       <MenuSection />
-      <Reserve />
+{/*       <Reserve /> */}
       <Gallery />
       <DrinkSection />
       <HappyHours />
-      <Party />
+{/*       <Party /> */}
       <AboutUs />
       <Footer />
     </>

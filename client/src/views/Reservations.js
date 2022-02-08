@@ -1,7 +1,14 @@
-import React from 'react';
+import React from "react";
+import NavBar from "../components/Navbar";
+import Reserve from "../components/Reserve";
 
 const Reservations = () => {
-  return <div></div>;
+  return (
+    <>
+      <NavBar />
+      <Reserve />
+    </>
+  );
 };
 
 export default Reservations;

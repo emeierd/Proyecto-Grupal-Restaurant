@@ -1,60 +1,46 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import images from "../constants/images";
-import "./styles/Navbar/Navbar.css";
+import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 
-const Navbar = () => {
+const NavBar = () => {
   return (
-    <nav className="navBar">
-      <div className="navBar-logo">
-        <Link className="links" to={"/"}>
-          <img src={images.logo} alt="navBar__logo" />
+    <Navbar bg="dark" variant="dark" expand="lg">
+      <Navbar.Brand>
+        <Link to={"/"}>
+          <img src={images.logo} alt="" height="80px" />{" "}
         </Link>
-      </div>
-      <ul className="navBar-links">
-        <li>
-          <Link id="navLinks" className="links" to={"/"}>
-            Promotions
-          </Link>
-        </li>
-        <li>
-          <Link className="links" to={"/"}>
+      </Navbar.Brand>
+      <Navbar.Toggle />
+      <Navbar.Collapse>
+        <Nav>
+          <NavDropdown title="Pedir" menuVariant="dark">
+            <NavDropdown.Item as={Link} to={"/"}>
+              Retiro en Local
+            </NavDropdown.Item>
+            <NavDropdown.Item as={Link} to={"/"}>
+              Delivery
+            </NavDropdown.Item>
+          </NavDropdown>
+          <Nav.Link as={Link} to={"/"}>
             Menu
-          </Link>
-        </li>
-        <li>
-          <Link className="links" to={"/"}>
-            Reserve
-          </Link>
-        </li>
-        <li>
-          <Link className="links" to={"/"}>
-            Gallery
-          </Link>
-        </li>
-        <li>
-          <Link className="links" to={"/"}>
-            Drinks
-          </Link>
-        </li>
-        <li>
-          <Link className="links" to={"/"}>
-            Happy Hours
-          </Link>
-        </li>
-        <li>
-          <Link className="links" to={"/"}>
-            Party
-          </Link>
-        </li>
-        <li>
-          <Link className="links" to={"/"}>
-            About Us
-          </Link>
-        </li>
-      </ul>
-    </nav>
+          </Nav.Link>
+          <Nav.Link as={Link} to={"/reservas"}>
+            Reservas
+          </Nav.Link>
+          <Nav.Link as={Link} to={"/"}>
+            Tragos
+          </Nav.Link>
+          <Nav.Link as={Link} to={"/fiestas"}>
+            Fiestas
+          </Nav.Link>
+          <Nav.Link as={Link} to={"/"}>
+            Contacto
+          </Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   );
 };
 
-export default Navbar;
+export default NavBar;
