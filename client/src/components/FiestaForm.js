@@ -37,7 +37,7 @@ const FiestaForm = ({ fecha }) => {
             for (let [key, value] of formData.entries()) entries[key] = value.trim();
         if (nameValidation.valid && lastNameValidation.valid && emailValidation.valid && personasValidation.valid) {
             console.log(entries)
-            entries.fecha = fecha.toLocaleDateString();
+            entries.fecha = fecha;
 
             try {
                 await axios.post('/api/fiesta/create', entries);
