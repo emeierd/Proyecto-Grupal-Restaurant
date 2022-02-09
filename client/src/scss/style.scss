@@ -1,2 +1,7 @@
 @use "custom";
 
+@use "./components/typography";
+
+@use "./sections/navbar";
+@use "./sections/cover";
+@use "./sections/notfound";

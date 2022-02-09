@@ -1,26 +1,33 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { Button, Container } from "react-bootstrap";
 
 const Cover = () => {
   return (
-    <div className="d-flex h-100 text-center text-white bg-dark">
-      <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-        <main className="px-3">
-          <h1>Cover your page.</h1>
-          <p className="lead">
-            Cover is a one-page template for building simple and beautiful home
-            pages. Download, edit the text, and add your own fullscreen
-            background photo to make it your own.
-          </p>
-          <p className="lead">
-            <a
-              href="#"
-              class="btn btn-lg btn-secondary fw-bold border-white bg-white"
-            >
-              Learn more
-            </a>
-          </p>
-        </main>
-      </div>
+    <div className="bg-dark text-light cover">
+      <Container fluid className="py-5">
+        <h1 className="display-5 fw-bold">¿Qué se te antoja hoy?</h1>
+        <p className="col-md-8 fs-4">
+          Tenemos la mejor selección de pizzas para tí.
+        </p>
+        <div className="col-6 col-md-2 d-grid gap-2">
+          <Button
+            as={Link}
+            to={"/pickup"}
+            variant="primary"
+            className="rounded-pill"
+          >
+            Retiro en local
+          </Button>
+          <Button
+            as={Link}
+            to={"/delivery"}
+            className="rounded-pill custom-primary"
+          >
+            Delivery
+          </Button>
+        </div>
+      </Container>
     </div>
   );
 };

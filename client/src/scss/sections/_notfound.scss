@@ -1,0 +1,15 @@
+@use "../custom" as *;
+
+.cover-container {
+  height: 100vh;
+  background-image: url("https://github.com/edureyesm/Proyecto-Grupal-Restaurant/blob/master/client/src/assets/notfound.jpeg?raw=true");
+  background-size: cover;
+
+  .custom-primary {
+    background-color: rgba($primary, 0.75);
+  }
+
+  .lost {
+    padding-top: 15rem;
+  }
+}
