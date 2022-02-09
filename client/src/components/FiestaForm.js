@@ -94,7 +94,7 @@ const FiestaForm = ({ fecha }) => {
         <label htmlFor="email">Email</label> {emailValidation.text}
       </div>
       <input type="email" name="email" onChange={validate} />
-      <Button variant="outline-primary">Solicitar reserva</Button>
+      <Button variant="outline-primary" type="submit">Solicitar reserva</Button>
     </Form>
   );
 };
