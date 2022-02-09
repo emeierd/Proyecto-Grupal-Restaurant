@@ -5,7 +5,7 @@ import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 
 const NavBar = () => {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg">
+    <Navbar bg="dark" variant="dark" expand="lg" sticky="fixed">
       <Navbar.Brand>
         <Link to={"/"}>
           <img src={images.logo} alt="" height="80px" />{" "}
