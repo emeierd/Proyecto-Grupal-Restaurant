@@ -18,7 +18,9 @@ const Footer = () => {
             <p fontSize={32} className="text-primary fs-3">
               Estamos Abiertos:
             </p>
-            <p className="text-primary fs-4">Lunes - Domingo: 12pm - 2am</p>
+            <p className="text-primary fs-4">
+              Lunes - Domingo: 00:00hrs - 02:00hrs
+            </p>
           </Col>
         </Row>
       </Container>
@@ -26,9 +28,9 @@ const Footer = () => {
       <Container fluid className="py-1">
         <Row className="py-3">
           <Col>
-            <FaWhatsapp fontSize={27} className="mx-3"/>
-            <FaFacebookF fontSize={27} className="mx-3"/>
-            <FaInstagram fontSize={27} className="mx-3"/>
+            <FaWhatsapp fontSize={27} className="mx-3" />
+            <FaFacebookF fontSize={27} className="mx-3" />
+            <FaInstagram fontSize={27} className="mx-3" />
           </Col>
         </Row>
         <Row>
