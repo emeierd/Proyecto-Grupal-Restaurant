@@ -2,14 +2,13 @@ import React from "react";
 import AboutUs from "../components/AboutUs";
 import DrinkSection from "../components/DrinkSection";
 import Footer from "../components/Footer";
-import Gallery from "../components/Gallery";
 import HappyHours from "../components/HappyHours";
 import Cover from "../components/Cover";
 import MenuSection from "../components/MenuSection";
 import NavBar from "../components/Navbar";
-import Party from "../components/Party";
 import PromoCarousel from "../components/PromoCarousel";
-import Reserve from "../components/Reserve";
+import PartySection from "../components/PartySection";
+import ReserveSection from "../components/ReserveSection";
 
 const Home = () => {
   return (
@@ -18,11 +17,10 @@ const Home = () => {
       <Cover />
       <PromoCarousel />
       <MenuSection />
-{/*       <Reserve /> */}
-      <Gallery />
+      <ReserveSection />
       <DrinkSection />
       <HappyHours />
-{/*       <Party /> */}
+      <PartySection />
       <AboutUs />
       <Footer />
     </>

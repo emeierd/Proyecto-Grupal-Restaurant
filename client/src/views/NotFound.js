@@ -4,7 +4,7 @@ import { Button, Container } from "react-bootstrap";
 
 const Notfound = () => {
   return (
-    <Container fluid className="d-flex text-center text-secondary cover-container">
+    <Container fluid className="d-flex text-center text-secondary cover-container bg-dark">
       <Container className="d-flex w-100 h-100 p-3 mx-auto flex-column">
         <main className="px-3 lost">
           <h1>¿Te perdiste?</h1>
