@@ -4,7 +4,7 @@ import DrinkSection from "../components/DrinkSection";
 import Footer from "../components/Footer";
 import Gallery from "../components/Gallery";
 import HappyHours from "../components/HappyHours";
-import Header from "../components/Header";
+import Cover from "../components/Cover";
 import MenuSection from "../components/MenuSection";
 import NavBar from "../components/Navbar";
 import Party from "../components/Party";
@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <>
       <NavBar />
-      <Header />
+      <Cover />
       <PromoCarousel />
       <MenuSection />
 {/*       <Reserve /> */}
