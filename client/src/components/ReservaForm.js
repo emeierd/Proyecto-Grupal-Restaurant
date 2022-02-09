@@ -58,7 +58,7 @@ const ReservaForm = ({ personas, turnoId }) => {
             <input type="text" id="lastName" name="lastName" onChange={validate} />
             <div><label htmlFor='email'>Email</label> {emailValidation.text}</div>
             <input type="email" id="email" name="email" onChange={validate} />
-            <button>Reservar</button>
+            <button type='submit'>Reservar</button>
         </form>
     );
 }
