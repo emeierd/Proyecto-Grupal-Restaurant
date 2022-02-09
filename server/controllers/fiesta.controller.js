@@ -18,13 +18,14 @@ const create = async (req, res) => {
 
         await fiesta.save();
         console.log(fiesta);
+        const fechaEmail = new Date(fecha);
      
         //enviar correo
         await transporter.sendMail({
             from: '"React Pizza House" <restomern@gmail.com>', // sender address
             to: email, // list of receivers
             subject: "Solicitud de reserva para fiesta", // Subject line
-            text: `Haz hecho una solicitud de reserva para fiesta para el ${fecha}, te contactaremos a la brevedad` // plain text body
+            text: `Haz hecho una solicitud de reserva para fiesta para el ${fechaEmail.toLocaleDateString()}, te contactaremos a la brevedad` // plain text body
         });
         res.status(201).json({ response: "OK", fiesta: fiesta });
     } catch (err) {
