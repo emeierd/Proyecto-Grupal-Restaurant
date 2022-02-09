@@ -6,6 +6,7 @@ Website de un restaurant ficticio tipo pizzeria
 
 ### Front-end
 - ReactJS
+- Bootstrap 5
 - Sass
 
 ### Back-end
