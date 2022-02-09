@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import validation from "./actions/validation";
-import { Button, Form, FormLabel } from "react-bootstrap";
+import { Button, Col, Form, FormLabel, Row } from "react-bootstrap";
 
 const FiestaForm = ({ fecha }) => {
   const [nameValidation, setNameValidation] = useState({
@@ -70,32 +70,53 @@ const FiestaForm = ({ fecha }) => {
   };
 
   return (
-    <Form className="register" onSubmit={onSubmit}>
-      <Form.Group className="col-md-3">
-        <FormLabel>Personas</FormLabel> {personasValidation.text}
-        <Form.Control
-          type={"number"}
-          name="personas"
-          defaultValue={10}
-          min={"10"}
-          max={"50"}
-          onChange={validate}
-        />
-      </Form.Group>
-      <div>
-        <label htmlFor="name">Name</label> {nameValidation.text}
-      </div>
-      <input type="text" name="name" onChange={validate} />
-      <div>
-        <label htmlFor="lastName">Lastname</label> {lastNameValidation.text}
-      </div>
-      <input type="text" name="lastName" onChange={validate} />
-      <div>
-        <label htmlFor="email">Email</label> {emailValidation.text}
-      </div>
-      <input type="email" name="email" onChange={validate} />
-      <Button variant="outline-primary" type="submit">Solicitar reserva</Button>
-    </Form>
+    <>
+      <Row>
+        <Col className="bg-dark text-center"></Col>
+        <Col md="auto" className="bg-dark text-center">
+          <Form className="register bg-dark text-center" onSubmit={onSubmit}>
+            <Form.Group className="col-md-auto">
+              <FormLabel className="text-primary">Personas</FormLabel>{" "}
+              {personasValidation.text}
+              <Form.Control
+                type={"number"}
+                name="personas"
+                defaultValue={10}
+                min={"10"}
+                max={"50"}
+                onChange={validate}
+              />
+            </Form.Group>
+            <div className="text-primary bg-dark">
+              <label className="text-primary" htmlFor="name">
+                Name
+              </label>{" "}
+              {nameValidation.text}
+            </div>
+            <input type="text" name="name" onChange={validate} />
+            <div>
+              <label className="text-primary" htmlFor="lastName">
+                Lastname
+              </label>{" "}
+              {lastNameValidation.text}
+            </div>
+            <input type="text" name="lastName" onChange={validate} />
+            <div>
+              <label className="text-primary" htmlFor="email">
+                Email
+              </label>{" "}
+              {emailValidation.text}
+            </div>
+            <input type="email" name="email" onChange={validate} />
+            <br />
+            <Button variant="outline-primary" type="submit">
+              Solicitar reserva
+            </Button>
+          </Form>
+        </Col>
+        <Col className="bg-dark text-center"></Col>
+      </Row>
+    </>
   );
 };
 
