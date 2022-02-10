@@ -2,7 +2,6 @@ import React from "react";
 import AboutUs from "../components/AboutUs";
 import DrinkSection from "../components/DrinkSection";
 import Footer from "../components/Footer";
-import HappyHours from "../components/HappyHours";
 import Cover from "../components/Cover";
 import MenuSection from "../components/MenuSection";
 import NavBar from "../components/Navbar";
@@ -17,9 +16,8 @@ const Home = () => {
       <Cover />
       <PromoCarousel />
       <MenuSection />
-      <ReserveSection />
       <DrinkSection />
-      <HappyHours />
+      <ReserveSection />
       <PartySection />
       <AboutUs />
       <Footer />

@@ -33,7 +33,7 @@
   --bs-secondary: #B6835D;
   --bs-success: #628b43;
   --bs-info: #192119;
-  --bs-warning: #628b43;
+  --bs-warning: #ddca22;
   --bs-danger: #f44336;
   --bs-light: #DBD1BE;
   --bs-dark: #192119;
@@ -41,7 +41,7 @@
   --bs-secondary-rgb: 182, 131, 93;
   --bs-success-rgb: 98, 139, 67;
   --bs-info-rgb: 25, 33, 25;
-  --bs-warning-rgb: 98, 139, 67;
+  --bs-warning-rgb: 221, 202, 34;
   --bs-danger-rgb: 244, 67, 54;
   --bs-light-rgb: 219, 209, 190;
   --bs-dark-rgb: 25, 33, 25;
@@ -2063,15 +2063,15 @@ progress {
 }
 
 .table-warning {
-  --bs-table-bg: #e0e8d9;
-  --bs-table-striped-bg: #d5dcce;
+  --bs-table-bg: #f8f4d3;
+  --bs-table-striped-bg: #ece8c8;
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #cad1c3;
+  --bs-table-active-bg: #dfdcbe;
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #cfd7c9;
+  --bs-table-hover-bg: #e5e2c3;
   --bs-table-hover-color: #000;
   color: #000;
-  border-color: #cad1c3;
+  border-color: #dfdcbe;
 }
 
 .table-danger {
@@ -3049,32 +3049,32 @@ textarea.form-control-lg {
 
 .btn-warning {
   color: #000;
-  background-color: #628b43;
-  border-color: #628b43;
+  background-color: #ddca22;
+  border-color: #ddca22;
 }
 .btn-warning:hover {
   color: #000;
-  background-color: #7a9c5f;
-  border-color: #729756;
+  background-color: #e2d243;
+  border-color: #e0cf38;
 }
 .btn-check:focus + .btn-warning, .btn-warning:focus {
   color: #000;
-  background-color: #7a9c5f;
-  border-color: #729756;
-  box-shadow: 0 0 0 0.25rem rgba(83, 118, 57, 0.5);
+  background-color: #e2d243;
+  border-color: #e0cf38;
+  box-shadow: 0 0 0 0.25rem rgba(188, 172, 29, 0.5);
 }
 .btn-check:checked + .btn-warning, .btn-check:active + .btn-warning, .btn-warning:active, .btn-warning.active, .show > .btn-warning.dropdown-toggle {
   color: #000;
-  background-color: #81a269;
-  border-color: #729756;
+  background-color: #e4d54e;
+  border-color: #e0cf38;
 }
 .btn-check:checked + .btn-warning:focus, .btn-check:active + .btn-warning:focus, .btn-warning:active:focus, .btn-warning.active:focus, .show > .btn-warning.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.25rem rgba(83, 118, 57, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(188, 172, 29, 0.5);
 }
 .btn-warning:disabled, .btn-warning.disabled {
   color: #000;
-  background-color: #628b43;
-  border-color: #628b43;
+  background-color: #ddca22;
+  border-color: #ddca22;
 }
 
 .btn-danger {
@@ -3268,27 +3268,27 @@ textarea.form-control-lg {
 }
 
 .btn-outline-warning {
-  color: #628b43;
-  border-color: #628b43;
+  color: #ddca22;
+  border-color: #ddca22;
 }
 .btn-outline-warning:hover {
   color: #000;
-  background-color: #628b43;
-  border-color: #628b43;
+  background-color: #ddca22;
+  border-color: #ddca22;
 }
 .btn-check:focus + .btn-outline-warning, .btn-outline-warning:focus {
-  box-shadow: 0 0 0 0.25rem rgba(98, 139, 67, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(221, 202, 34, 0.5);
 }
 .btn-check:checked + .btn-outline-warning, .btn-check:active + .btn-outline-warning, .btn-outline-warning:active, .btn-outline-warning.active, .btn-outline-warning.dropdown-toggle.show {
   color: #000;
-  background-color: #628b43;
-  border-color: #628b43;
+  background-color: #ddca22;
+  border-color: #ddca22;
 }
 .btn-check:checked + .btn-outline-warning:focus, .btn-check:active + .btn-outline-warning:focus, .btn-outline-warning:active:focus, .btn-outline-warning.active:focus, .btn-outline-warning.dropdown-toggle.show:focus {
-  box-shadow: 0 0 0 0.25rem rgba(98, 139, 67, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(221, 202, 34, 0.5);
 }
 .btn-outline-warning:disabled, .btn-outline-warning.disabled {
-  color: #628b43;
+  color: #ddca22;
   background-color: transparent;
 }
 
@@ -4867,12 +4867,12 @@ textarea.form-control-lg {
 }
 
 .alert-warning {
-  color: #3b5328;
-  background-color: #e0e8d9;
-  border-color: #d0dcc7;
+  color: #58510e;
+  background-color: #f8f4d3;
+  border-color: #f5efbd;
 }
 .alert-warning .alert-link {
-  color: #2f4220;
+  color: #46410b;
 }
 
 .alert-danger {
@@ -5226,17 +5226,17 @@ textarea.form-control-lg {
 }
 
 .list-group-item-warning {
-  color: #3b5328;
-  background-color: #e0e8d9;
+  color: #58510e;
+  background-color: #f8f4d3;
 }
 .list-group-item-warning.list-group-item-action:hover, .list-group-item-warning.list-group-item-action:focus {
-  color: #3b5328;
-  background-color: #cad1c3;
+  color: #58510e;
+  background-color: #dfdcbe;
 }
 .list-group-item-warning.list-group-item-action.active {
   color: #fff;
-  background-color: #3b5328;
-  border-color: #3b5328;
+  background-color: #58510e;
+  border-color: #58510e;
 }
 
 .list-group-item-danger {
@@ -6309,10 +6309,10 @@ textarea.form-control-lg {
 }
 
 .link-warning {
-  color: #628b43;
+  color: #ddca22;
 }
 .link-warning:hover, .link-warning:focus {
-  color: #81a269;
+  color: #e4d54e;
 }
 
 .link-danger {
@@ -6743,7 +6743,7 @@ textarea.form-control-lg {
 }
 
 .border-warning {
-  border-color: #628b43 !important;
+  border-color: #ddca22 !important;
 }
 
 .border-danger {
@@ -11124,7 +11124,7 @@ body {
 }
 
 .navbar {
-  height: 15vh;
+  min-height: 15vh;
 }
 
 .cover {
@@ -11147,6 +11147,49 @@ body {
 }
 .cover-container .lost {
   padding-top: 15rem;
+}
+
+.menu {
+  background-image: url("https://raw.githubusercontent.com/edureyesm/Proyecto-Grupal-Restaurant/master/client/src/assets/menu.jpeg");
+  background-size: cover;
+  min-height: 50vh;
+  padding: 3.5rem 0 0 1rem;
+}
+.menu .custom-primary {
+  background-color: rgba(150, 56, 38, 0.75);
+}
+
+.reserves .reserves-cover {
+  background-image: url("../../assets/reserves.jpeg");
+  background-size: cover;
+  min-height: 50vh;
+}
+.reserves .reserves-text {
+  min-height: 50vh;
+}
+.reserves .custom-primary {
+  background-color: rgba(150, 56, 38, 0.75);
+}
+
+.reserve {
+  min-height: 50vh;
+  padding-top: 5rem;
+}
+
+.drink {
+  background-image: url("../../assets/drinks.jpeg");
+  background-size: cover;
+  min-height: 50vh;
+  padding: 3.5rem 0 0 1rem;
+}
+
+.party .party-cover {
+  background-image: url("../../assets/party.jpeg");
+  background-size: cover;
+  min-height: 50vh;
+}
+.party .party-text {
+  min-height: 50vh;
 }
 
 /*# sourceMappingURL=style.css.map */
