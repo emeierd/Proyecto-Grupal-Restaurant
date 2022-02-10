@@ -9,7 +9,6 @@ import NavBar from "../components/Navbar";
 import PromoCarousel from "../components/PromoCarousel";
 import PartySection from "../components/PartySection";
 import ReserveSection from "../components/ReserveSection";
-import Orders from "../components/Orders";
 
 const Home = () => {
   return (
@@ -17,7 +16,6 @@ const Home = () => {
       <NavBar />
       <Cover />
       <PromoCarousel />
-      <Orders/>
       <MenuSection />
       <ReserveSection />
       <DrinkSection />
