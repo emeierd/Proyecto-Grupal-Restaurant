@@ -66,11 +66,13 @@ const Orders = () => {
 
   const delivery = (e) => {
     e.preventDefault();
+    if (pickupSelect) setPickupSelect(false);
     setDeliverySelect(true);
   };
 
   const pickup = (e) => {
     e.preventDefault();
+    if (deliverySelect) setDeliverySelect(false);
     setPickupSelect(true);
   };
 
