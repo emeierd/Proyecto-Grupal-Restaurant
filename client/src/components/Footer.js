@@ -1,6 +1,7 @@
 import React from "react";
 import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { Col, Container, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const today = new Date();
@@ -28,15 +29,19 @@ const Footer = () => {
       <Container fluid className="py-1">
         <Row className="py-3">
           <Col>
-            <a href="https://api.whatsapp.com/send?phone=56999056122&text=Hola%20quiero%20hacer%20un%20pedido">
+            <Link
+              to={
+                "https://api.whatsapp.com/send?phone=56999056122&text=Hola%20quiero%20hacer%20un%20pedido"
+              }
+            >
               <FaWhatsapp fontSize={27} className="mx-3" />
-            </a>
-            <a href="https://www.facebook.com/">
+            </Link>
+            <Link to={"https://www.facebook.com/"}>
               <FaFacebookF fontSize={27} className="mx-3" />
-            </a>
-            <a href="https://www.instagram.com/">
+            </Link>
+            <Link to={"https://www.instagram.com/"}>
               <FaInstagram fontSize={27} className="mx-3" />
-            </a>
+            </Link>
           </Col>
         </Row>
         <Row>

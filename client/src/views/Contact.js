@@ -1,5 +1,5 @@
 import React from "react";
-import AboutUs from "../components/AboutUs";
+import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
 import NavBar from "../components/Navbar";
 
@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <div>
       <NavBar />
-      <AboutUs />
+      <ContactForm />
       <Footer />
     </div>
   );
