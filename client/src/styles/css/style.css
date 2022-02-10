@@ -11176,4 +11176,20 @@ body {
   padding-top: 5rem;
 }
 
+.drink {
+  background-image: url("../../assets/drinks.jpeg");
+  background-size: cover;
+  min-height: 50vh;
+  padding: 3.5rem 0 0 1rem;
+}
+
+.party .party-cover {
+  background-image: url("../../assets/party.jpeg");
+  background-size: cover;
+  min-height: 50vh;
+}
+.party .party-text {
+  min-height: 50vh;
+}
+
 /*# sourceMappingURL=style.css.map */

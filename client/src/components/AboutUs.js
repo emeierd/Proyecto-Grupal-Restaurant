@@ -6,6 +6,7 @@ import "../styles/css/estilos.css";
 const AboutUs = () => {
   return (
     <div className="text-primary text-center bg-dark salto">
+
       <h1>¿Quienes Somos?</h1>
       <p className="text-secondary">
         Somos una Pizzeria inspirada en la cocina de MERN Ramsay, contamos
