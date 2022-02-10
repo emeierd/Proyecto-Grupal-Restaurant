@@ -91,7 +91,7 @@ const Reserve = () => {
     }
   };
   return (
-    <div className="text-center bg-dark">
+    <div className="text-center bg-dark reserve">
       <label className="text-primary bg-dark fila" htmlFor="number">
         N° Personas&nbsp;(mínimo 2, máximo 8)&nbsp;
       </label>
@@ -118,7 +118,7 @@ const Reserve = () => {
 
       {disponible ? (
         <ReservaForm personas={personas} turnoId={turnoId} />
-      ) : <h3 className="text-primary">No hay mesas disponibles, intente otra fecha/hora</h3>}
+      ) : <h3 className="text-primary">Lo sentimos, no hay mesas disponibles. Por favor, intente otra fecha/hora.</h3>}
     </div>
   );
 };

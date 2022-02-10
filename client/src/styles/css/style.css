@@ -11150,13 +11150,30 @@ body {
 }
 
 .menu {
-  background-image: url("../../assets/menu.jpeg");
+  background-image: url("https://raw.githubusercontent.com/edureyesm/Proyecto-Grupal-Restaurant/master/client/src/assets/menu.jpeg");
   background-size: cover;
   min-height: 50vh;
   padding: 3.5rem 0 0 1rem;
 }
 .menu .custom-primary {
   background-color: rgba(150, 56, 38, 0.75);
+}
+
+.reserves .reserves-cover {
+  background-image: url("../../assets/reserves.jpeg");
+  background-size: cover;
+  min-height: 50vh;
+}
+.reserves .reserves-text {
+  min-height: 50vh;
+}
+.reserves .custom-primary {
+  background-color: rgba(150, 56, 38, 0.75);
+}
+
+.reserve {
+  min-height: 50vh;
+  padding-top: 5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
