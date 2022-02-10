@@ -42,6 +42,22 @@ const ContactForm = () => {
     <div className="bg-dark text-primary contact">
       <Row>
         <Col className="col-md-3"></Col>
+
+        <Col className="col-md-5">
+          <Row className="text-center">
+            <h1 className="fs-1 fila">Contact us</h1>
+          </Row>
+          <Row className="text-center fs-5 text-secondary">
+            <p>
+              Si deseas puedes enviarnos un correo a{" "}
+              <span className="text-light fs-4">pizzasMERN@coding.dojo</span>
+            </p>
+          </Row>
+        </Col>
+        <Col className="col-md-3"></Col>
+      </Row>
+      {/* <Row>
+        <Col className="col-md-3"></Col>
         <Col className="col-md-2 fs-1">Contact Us</Col>
         <Col>
           <Form className="register bg-dark text-center" onSubmit={onSubmit}>
@@ -106,7 +122,7 @@ const ContactForm = () => {
             </Row>
           </Form>
         </Col>
-      </Row>
+      </Row> */}
     </div>
   );
 };
