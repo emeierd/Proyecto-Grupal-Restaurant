@@ -1,0 +1,13 @@
+@use "../custom" as *;
+
+.menu {
+  background-image: url("../../assets/menu.jpeg");
+  background-size: cover;
+  min-height: 50vh;
+  padding: 3.5rem 0 0 1rem;
+
+  .custom-primary {
+    background-color: rgba($primary, 0.75);
+  }
+}
+
