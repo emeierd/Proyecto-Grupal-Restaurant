@@ -34,12 +34,14 @@ const create = async (req, res) => {
         console.log(turno.reservas)
         await turno.save();
 
+        const fechaMail = new Date(turno.fecha);
+
         //enviar correo
         await transporter.sendMail({
             from: '"React Pizza House" <restomern@gmail.com>', // sender address
             to: email, // list of receivers
             subject: "Verificación de reserva", // Subject line
-            text: `Haz hecho una reserva para el ${turno.fecha}, por favor verifica tu reserva en el siguiente link: http://localhost:8000/api/reserva/confirm/${reserva._id}` // plain text body
+            text: `Has hecho una reserva para el ${fechaMail.toLocaleString()}, por favor verifica tu reserva en el siguiente link: http://localhost:8000/api/reserva/confirm/${reserva._id}` // plain text body
           });
         res.status(201).json({ response: "OK", reserva: reserva });
     } catch (err) {

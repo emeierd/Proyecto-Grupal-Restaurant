@@ -28,7 +28,7 @@ const create = async (req, res) => {
             prods.push(`${productos.cantidades[i]}x ${productos.nombres[i]}`)
         }
 
-        if(canal==="delivery") text=`Haz hecho un pedido el ${new Date().toLocaleString()} de ${prods.join(" ")} con delivery para ${direccion},${comuna} por $${total}`
+        if(canal==="delivery") text=`Haz hecho un pedido el ${new Date().toLocaleString()} de ${prods.join(" ")} con delivery para ${direccion}, ${comuna} por $${total}`
         else text=`Haz hecho un pedido el ${new Date().toLocaleString()} de ${prods.join(" ")} con retiro en local por $${total}`
         //enviar correo
         await transporter.sendMail({
