@@ -13,10 +13,11 @@ const Cover = () => {
         <div className="col-6 col-md-2 d-grid gap-2">
           <Button
             as={Link}
-            to={"/pickup"}
-            className="rounded-pill custom-primary"
+            to={"/order"}
+            variant="primary"
+            className="rounded-pill"
           >
-            Retiro en local
+            Realizar Pedido
           </Button>
           <Button
             as={Link}

@@ -6,7 +6,7 @@ import Reservations from "./views/Reservations";
 import Parties from "./views/Parties";
 import DrinksView from "./views/Drinks";
 import MenuView from "./views/Menu";
-import Contact from "./views/Contact";
+import Order from "./views/Order";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
           <Route path="fiestas" element={<Parties />} />
           <Route path="menu" element={<MenuView />} />
           <Route path="tragos" element={<DrinksView />} />
-          <Route path="contacto" element={<Contact />} />
+          <Route path="order" element={<Order />} />
         </Routes>
       </Router>
     </div>

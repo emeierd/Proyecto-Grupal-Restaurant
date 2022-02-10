@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { Col, Row } from "react-bootstrap";
+import { Col, Row, Button } from "react-bootstrap";
 import "../styles/css/estilos.css";
+import { Link } from "react-router-dom";
+import DeliveryForm from "./DeliveryForm";
 
 const Orders = () => {
   const [pizzas, setPizzas] = useState([]);
   const [productos, setProductos] = useState([]);
-
+  const [deliverySelect, setDeliverySelect] = useState(false);
   useEffect(() => {
     const getPizzas = async () => {
       try {
@@ -17,7 +19,6 @@ const Orders = () => {
       }
     };
     getPizzas().then(({ data }) => {
-      console.log(data);
       setPizzas(data);
     });
   }, []);
@@ -61,6 +62,11 @@ const Orders = () => {
     setProductos(prods);
   };
 
+  const delivery = (e) => {
+    e.preventDefault();
+    setDeliverySelect(true);
+  };
+
   return (
     <div>
       <h3 className="text-primary text-center">Nuestras Pizzas:</h3>
@@ -85,7 +91,7 @@ const Orders = () => {
               </Row>
               <Row>
                 <Col className="text-secondary fila col-lg-auto">
-                  (salsa: {sauce}, masa: {mass}, tamano: {size})
+                  (salsa: {sauce}, masa: {mass}, tamaño: {size})
                 </Col>
                 <Col className="col-lg-4"></Col>
                 <Col className="col-lg-4"></Col>
@@ -93,14 +99,14 @@ const Orders = () => {
             </>
           ))}
         </Col>
-        <Col>
-          <Row className="text-primary text-center">Carrito de compras</Row>
+        <Col className="text-light">
+          <Row>Carrito de compras</Row>
           <Row>
-            <Col className="text-secondary">Producto</Col>
-            <Col className="text-light">Cantidad</Col>
-            <Col className="text-light">$</Col>
+            <Col>Producto</Col>
+            <Col>Cantidad</Col>
+            <Col>$</Col>
           </Row>
-          <Row className="text-light">
+          <Row>
             {productos.length
               ? productos.map((producto, i) => (
                   <Row key={i}>
@@ -120,8 +126,31 @@ const Orders = () => {
                   </Row>
                 ))
               : null}
+            <Button
+              as={Link}
+              to={"/"}
+              variant="primary"
+              className="rounded-pill w-25 "
+            >
+              Retiro en local
+            </Button>
+            <Button
+              variant="primary"
+              className="rounded-pill w-25 mx-auto"
+              onClick={delivery}
+            >
+              Delivery
+            </Button>
+            <Button
+              as={Link}
+              to={"/"}
+              variant="primary"
+              className="rounded-pill w-25 mx-auto"
+            >
+              Volver
+            </Button>
           </Row>
-          <Row className="text-light">{"form"}</Row>
+          {deliverySelect && <DeliveryForm products={productos} />}
         </Col>
       </Row>
     </div>
