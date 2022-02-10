@@ -96,45 +96,33 @@ const FiestaForm = ({ fecha }) => {
               <Col className="col-md-4">
                 <Form.Label className="text-primary" htmlFor="name">
                   Name
-                </Form.Label>
-                {/* <label className="text-primary" htmlFor="name">
-                  Name
-                </label> */}{" "}
+                </Form.Label>{" "}
                 {nameValidation.text}
               </Col>
               <Col>
-                {/* <Form.Control type="text" name="name" onChange={validate} /> */}
-                <input type="text" name="name" onChange={validate} />
+                <Form.Control type="text" name="name" onChange={validate} />
               </Col>
             </Row>
             <Row className="fila">
               <Col className="col-md-4">
                 <Form.Label className="text-primary" htmlFor="lastName">
                   Lastname
-                </Form.Label>
-                {/* <label className="text-primary" htmlFor="lastName">
-                  Lastname
-                </label> */}{" "}
+                </Form.Label>{" "}
                 {lastNameValidation.text}
               </Col>
               <Col>
                 <Form.Control type="text" name="lastName" onChange={validate} />
-                {/* <input type="text" name="lastName" onChange={validate} /> */}
               </Col>
             </Row>
             <Row className="fila">
               <Col className="col-md-4">
                 <Form.Label className="text-primary" htmlFor="lastName">
                   Email
-                </Form.Label>
-                {/* <label className="text-primary" htmlFor="email">
-                  Email
-                </label> */}{" "}
+                </Form.Label>{" "}
                 {emailValidation.text}
               </Col>
               <Col>
                 <Form.Control type="email" name="email" onChange={validate} />
-                {/* <input type="email" name="email" onChange={validate} /> */}
               </Col>
             </Row>
             <Row className="fila">
