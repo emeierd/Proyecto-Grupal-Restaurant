@@ -7,5 +7,6 @@ router.use("/pizzas", require("./pizza"));
 router.use("/products", require("./product"));
 router.use("/fiesta", require("./fiesta"));
 router.use("/pedido", require("./pedido"));
+router.use("/tragos", require("./tragos"));
 
 module.exports = router;
