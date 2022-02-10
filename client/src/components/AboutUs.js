@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import "../styles/css/estilos.css";
 
 const AboutUs = () => {
   return (
-    <div className="text-primary text-center">
+    <div className="text-primary text-center bg-dark salto">
       <h1>¿Quienes Somos?</h1>
       <p className="text-secondary">
         Somos una Pizzeria inspirada en la cocina de MERN Ramsay, contamos
@@ -18,10 +19,19 @@ const AboutUs = () => {
         <br />
         Ante cualquier pregunta no dudes en contactarnos via redes sociales
       </p>
-      <div className="text-light">
-        <FaWhatsapp fontSize={27} className="mx-3" />
-        <FaFacebookF fontSize={27} className="mx-3" />
-        <FaInstagram fontSize={27} className="mx-3" />
+      <div>
+        <a
+          className="text-light"
+          href="https://api.whatsapp.com/send?phone=56999056122&text=Hola%20quiero%20hacer%20un%20pedido"
+        >
+          <FaWhatsapp fontSize={27} className="mx-3" />
+        </a>
+        <a className="text-light" href="https://www.facebook.com/">
+          <FaFacebookF fontSize={27} className="mx-3" />
+        </a>
+        <a className="text-light" href="https://www.instagram.com/">
+          <FaInstagram fontSize={27} className="mx-3" />
+        </a>
       </div>
     </div>
   );
