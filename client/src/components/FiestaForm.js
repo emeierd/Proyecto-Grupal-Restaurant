@@ -78,7 +78,7 @@ const FiestaForm = ({ fecha }) => {
           <Form className="register bg-dark text-center" onSubmit={onSubmit}>
             <Row className="fila">
               <Col className="col-md-4">
-                <FormLabel className="text-primary">Personas</FormLabel>{" "}
+                <Form.Label className="text-primary">Personas</Form.Label>{" "}
                 {personasValidation.text}
               </Col>
               <Col className="columna">
@@ -116,7 +116,7 @@ const FiestaForm = ({ fecha }) => {
             </Row>
             <Row className="fila">
               <Col className="col-md-4">
-                <Form.Label className="text-primary" htmlFor="lastName">
+                <Form.Label className="text-primary" htmlFor="email">
                   Email
                 </Form.Label>{" "}
                 {emailValidation.text}

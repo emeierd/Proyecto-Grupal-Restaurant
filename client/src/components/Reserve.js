@@ -6,6 +6,7 @@ import setHours from "date-fns/setHours";
 import setMinutes from "date-fns/setMinutes";
 import axios from "axios";
 import ReservaForm from "./ReservaForm";
+import "../styles/css/estilos.css";
 registerLocale("es", es);
 
 const Reserve = () => {
@@ -91,7 +92,7 @@ const Reserve = () => {
   };
   return (
     <div className="text-center bg-dark">
-      <label className="text-primary bg-dark" htmlFor="number">
+      <label className="text-primary bg-dark fila" htmlFor="number">
         N° Personas&nbsp;
       </label>
       <input
@@ -104,6 +105,7 @@ const Reserve = () => {
         onChange={(e) => personasChange(e)}
       />
       <DatePicker
+        className="fila date-picker"
         selected={startDate}
         onChange={(date) => onDatePick(date)}
         minDate={new Date()}
@@ -113,6 +115,7 @@ const Reserve = () => {
         includeTimes={times}
         dateFormat="MMMM d, yyyy h:mm aa"
       />
+
       {disponible ? (
         <ReservaForm personas={personas} turnoId={turnoId} />
       ) : null}
