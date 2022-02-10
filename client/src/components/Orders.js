@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, Fragment } from "react";
 import axios from "axios";
 import { Col, Row, Button } from "react-bootstrap";
 import "../styles/css/estilos.css";
@@ -91,7 +91,7 @@ const Orders = () => {
       <Row className="fila">
         <Col>
           {pizzas.map(({ _id, title, price, sauce, mass, size, products }) => (
-            <>
+            <Fragment key={_id}>
               <Row>
                 <Col className="text-primary" key={_id}>
                   {title}
@@ -116,7 +116,7 @@ const Orders = () => {
                 </Col>
                 <Col className="col-lg-4"></Col>
               </Row>
-            </>
+            </Fragment>
           ))}
         </Col>
         <Col className="text-light">
