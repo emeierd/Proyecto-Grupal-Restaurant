@@ -19,13 +19,6 @@ const Cover = () => {
           >
             Realizar Pedido
           </Button>
-          <Button
-            as={Link}
-            to={"/delivery"}
-            className="rounded-pill custom-primary"
-          >
-            Delivery
-          </Button>
         </div>
       </Container>
     </div>
