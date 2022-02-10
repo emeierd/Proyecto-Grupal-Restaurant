@@ -45,18 +45,30 @@ const NavBar = () => {
             <Nav.Item className="nav-link">
               <a
                 href="https://api.whatsapp.com/send?phone=56999056122&text=Hola%20quiero%20hacer%20un%20pedido"
-                target="_blank" className="text-light"
+                target="_blank"
+                rel="noreferrer"
+                className="text-light"
               >
                 <FaWhatsapp fontSize={36} className="mx-3" />
               </a>
             </Nav.Item>
             <Nav.Item className="nav-link">
-              <a href="https://www.facebook.com/" target="_blank" className="text-light">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noreferrer"
+                className="text-light"
+              >
                 <FaFacebookF fontSize={36} className="mx-3" />
               </a>
             </Nav.Item>
             <Nav.Item className="nav-link">
-              <a href="https://www.instagram.com/" target="_blank" className="text-light">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noreferrer"
+                className="text-light"
+              >
                 <FaInstagram fontSize={36} className="mx-3" />
               </a>
             </Nav.Item>

@@ -32,15 +32,24 @@ const Footer = () => {
             <a
               href="https://api.whatsapp.com/send?phone=56999056122&text=Hola%20quiero%20hacer%20un%20pedido"
               target="_blank"
+              rel="noreferrer"
             >
               <FaWhatsapp fontSize={36} className="mx-3" />
             </a>
 
-            <a href="https://www.facebook.com/" target="_blank">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaFacebookF fontSize={36} className="mx-3" />
             </a>
 
-            <a href="https://www.instagram.com/" target="_blank">
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaInstagram fontSize={36} className="mx-3" />
             </a>
           </Col>
