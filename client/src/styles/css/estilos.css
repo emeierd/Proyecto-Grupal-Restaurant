@@ -11,3 +11,7 @@
 .salto {
   line-height: 2.5rem;
 }
+
+.pointer {
+  cursor: pointer;
+}

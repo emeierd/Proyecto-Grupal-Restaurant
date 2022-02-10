@@ -99,6 +99,7 @@ const Orders = () => {
                 <Col className="text-light">${price}</Col>
                 <Col className="col-lg-4">
                   <input
+                    className="pointer"
                     type="checkbox"
                     onChange={itemCheck}
                     idpizza={_id}
@@ -133,16 +134,15 @@ const Orders = () => {
                     <Col>
                       <Row>
                         <Col>
-                          <p
-                            onClick={(e) => restar(e, i)}
-                            className="cursor-pointer"
-                          >
+                          <p className="pointer" onClick={(e) => restar(e, i)}>
                             -
                           </p>
                         </Col>
                         <Col>{producto.cantidad}</Col>
-                        <Col className="pe-auto">
-                          <p onClick={(e) => sumar(e, i)}>+</p>
+                        <Col>
+                          <p className="pointer" onClick={(e) => sumar(e, i)}>
+                            +
+                          </p>
                         </Col>
                       </Row>
                     </Col>
