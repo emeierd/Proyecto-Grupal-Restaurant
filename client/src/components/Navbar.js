@@ -42,7 +42,7 @@ const NavBar = () => {
             <Nav.Link as={Link} to={"/fiestas"}>
               Fiestas
             </Nav.Link>
-            <Nav.Link as={Link} to={"/"}>
+            <Nav.Link as={Link} to={"/contacto"}>
               Contacto
             </Nav.Link>
           </Nav>
