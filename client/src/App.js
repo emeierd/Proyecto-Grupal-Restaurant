@@ -5,7 +5,7 @@ import Home from "./views/Home";
 import Reservations from "./views/Reservations";
 import Parties from "./views/Parties";
 import Drinks from "./components/Drinks";
-import Menu from "./components/Menu";
+import MenuView from "./views/Menu";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
           <Route path="reservas" element={<Reservations />} />
           <Route path="fiestas" element={<Parties />} />
-          <Route path="menu" element={<Menu />} />
+          <Route path="menu" element={<MenuView />} />
           <Route path="tragos" element={<Drinks />} />
         </Routes>
       </Router>

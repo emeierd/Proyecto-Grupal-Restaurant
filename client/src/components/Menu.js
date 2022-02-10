@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { Col, Row } from "react-bootstrap";
+import "../styles/css/estilos.css";
 
 const Menu = () => {
   const [pizzas, setPizzas] = useState([]);
@@ -29,13 +31,27 @@ const Menu = () => {
 
   return (
     <div>
-      <h3>Nuestras Pizzas</h3>
-      {pizzas.map(({ _id, title, price }) => (
-        <>
-          <p key={_id}>{title}</p>
-          <p>{price}</p>
-        </>
-      ))}
+      <h3 className="text-primary text-center">Nuestras Pizzas:</h3>
+      <Row className="fila">
+        {pizzas.map(({ _id, title, price, sauce, mass, size }) => (
+          <>
+            <Row>
+              <Col className="col-lg-4"></Col>
+              <Col className="text-primary" key={_id}>
+                {title}
+              </Col>
+              <Col className="text-light">${price}</Col>
+            </Row>
+            <Row>
+              <Col className="col-lg-4"></Col>
+              <Col className="text-secondary fila col-lg-auto">
+                (salsa: {sauce}, masa: {mass}, tamano: {size})
+              </Col>
+              <Col className="col-lg-4"></Col>
+            </Row>
+          </>
+        ))}
+      </Row>
     </div>
   );
 };
