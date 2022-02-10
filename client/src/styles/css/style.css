@@ -11149,4 +11149,14 @@ body {
   padding-top: 15rem;
 }
 
+.menu {
+  background-image: url("../../assets/menu.jpeg");
+  background-size: cover;
+  min-height: 50vh;
+  padding: 3.5rem 0 0 1rem;
+}
+.menu .custom-primary {
+  background-color: rgba(150, 56, 38, 0.75);
+}
+
 /*# sourceMappingURL=style.css.map */
