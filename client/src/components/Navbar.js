@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import images from "../constants/images";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 const NavBar = () => {
   return (
@@ -13,14 +14,14 @@ const NavBar = () => {
       className="navbar"
     >
       <Container fluid className="fs-5">
-        <Navbar.Brand>
+        <Navbar.Brand className="me-5">
           <Link to={"/"}>
             <img src={images.logo} alt="" height="80px" />{" "}
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse>
-          <Nav>
+          <Nav className="me-auto">
             <NavDropdown title="Pedir" menuVariant="dark">
               <NavDropdown.Item as={Link} to={"/"}>
                 Retiro en Local
@@ -45,6 +46,11 @@ const NavBar = () => {
               Contacto
             </Nav.Link>
           </Nav>
+          <Navbar.Text className="d-flex">
+              <FaWhatsapp fontSize={27} className="mx-3" />
+              <FaFacebookF fontSize={27} className="mx-3" />
+              <FaInstagram fontSize={27} className="mx-3" />
+            </Navbar.Text>
         </Navbar.Collapse>
       </Container>
     </Navbar>
