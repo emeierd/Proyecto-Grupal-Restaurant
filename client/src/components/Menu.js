@@ -19,6 +19,12 @@ const Menu = () => {
     });
   }, []);
 
+  const getProductos = (products) => {
+    let productos = [];
+    products.forEach(producto => productos.push(producto.title));
+    return productos.join(", ");
+  }
+
   return (
     <div>
       <h3 className="text-primary text-center">Nuestras Pizzas:</h3>
@@ -37,9 +43,7 @@ const Menu = () => {
               <Col className="text-secondary fila col-lg-auto">
                 (salsa: {sauce}, masa: {mass}, tamaño: {size}) <br></br>
                 Ingredientes:
-                {products.map(({ title }) => (
-                  <> {title}, </>
-                ))}
+                {getProductos(products)}
               </Col>
               <Col className="col-lg-4"></Col>
             </Row>
