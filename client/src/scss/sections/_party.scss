@@ -1,0 +1,13 @@
+@use "../custom" as *;
+
+.party {
+    .party-cover {
+        background-image: url("../../assets/party.jpeg");
+        background-size: cover;
+        min-height: 50vh;
+    }
+
+    .party-text {
+        min-height: 50vh;
+    }
+}

@@ -13,7 +13,7 @@ const DrinkSection = () => {
         <div className="col-6 col-md-2 d-grid gap-2">
           <Button
             as={Link}
-            to={"/menu"}
+            to={"/tragos"}
             variant="outline-light"
             className="rounded-pill"
           >

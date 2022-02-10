@@ -33,11 +33,11 @@ const NavBar = () => {
             <Nav.Link as={Link} to={"/menu"}>
               Menu
             </Nav.Link>
-            <Nav.Link as={Link} to={"/reservas"}>
-              Reservas
-            </Nav.Link>
             <Nav.Link as={Link} to={"/tragos"}>
               Tragos
+            </Nav.Link>
+            <Nav.Link as={Link} to={"/reservas"}>
+              Reservas
             </Nav.Link>
             <Nav.Link as={Link} to={"/fiestas"}>
               Fiestas
