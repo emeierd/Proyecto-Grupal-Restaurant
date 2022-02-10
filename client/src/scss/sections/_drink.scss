@@ -1,0 +1,8 @@
+@use "../custom" as *;
+
+.drink {
+  background-image: url("../../assets/drinks.jpeg");
+  background-size: cover;
+  min-height: 50vh;
+  padding: 3.5rem 0 0 1rem;
+}
