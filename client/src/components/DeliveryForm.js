@@ -19,6 +19,8 @@ const DeliveryForm = ({ products }) => {
   const [name, setName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
+  const [comuna, setComuna] = useState("");
+  const [direccion, setDireccion] = useState("");
   const productsId = [];
   products.forEach((item) => productsId.push(item.idpizza));
   const productsNames = [];
@@ -63,6 +65,8 @@ const DeliveryForm = ({ products }) => {
         cantidades: productsCantidad,
       },
       total: total,
+      comuna: comuna,
+      direccion: direccion,
     });
   };
 
@@ -118,40 +122,44 @@ const DeliveryForm = ({ products }) => {
           </Form.Label>
         </Col>
         <Col>
-          <Form.Select type="comuna" name="comuna">
-            <option value="1">Cerrillos</option>
-            <option value="1">Cerro Navia</option>
-            <option value="1">Conchalí</option>
-            <option value="1">El Bosque</option>
-            <option value="1">Estación Central</option>
-            <option value="1">Huechuraba</option>
-            <option value="1">Independencia</option>
-            <option value="1">La Florida</option>
-            <option value="1">La Cisterna</option>
-            <option value="1">La Granja</option>
-            <option value="1">La Pintana</option>
-            <option value="1">La Reina</option>
-            <option value="1">Las Condes</option>
-            <option value="1">Lo Barnechea</option>
-            <option value="1">Lo Espejo</option>
-            <option value="1">Lo Prado</option>
-            <option value="1">Macul</option>
-            <option value="1">Maipú</option>
-            <option value="1">Ñuñoa</option>
-            <option value="1">Pedro Aguirre Cerda</option>
-            <option value="1">Ñuñoa</option>
-            <option value="1">Peñalolén</option>
-            <option value="1">Providencia</option>
-            <option value="1">Pudahuel</option>
-            <option value="1">Quilicura</option>
-            <option value="1">Quinta Normal</option>
-            <option value="1">Recoleta</option>
-            <option value="1">Renca</option>
-            <option value="1">San Joaquín</option>
-            <option value="1">San Miguel</option>
-            <option value="1">San Ramón</option>
-            <option value="1">Santiago</option>
-            <option value="1">Vitacura</option>
+          <Form.Select
+            type="comuna"
+            name="comuna"
+            onChange={(e) => setComuna(e.target.value)}
+          >
+            <option value="Cerrillos">Cerrillos</option>
+            <option value="Cerro Navia">Cerro Navia</option>
+            <option value="Conchalí">Conchalí</option>
+            <option value="El Bosque">El Bosque</option>
+            <option value="Estación Central">Estación Central</option>
+            <option value="Huechuraba">Huechuraba</option>
+            <option value="Independencia">Independencia</option>
+            <option value="La Florida">La Florida</option>
+            <option value="La Cisterna">La Cisterna</option>
+            <option value="La Granja">La Granja</option>
+            <option value="La Pintana">La Pintana</option>
+            <option value="La Reina">La Reina</option>
+            <option value="Las Condes">Las Condes</option>
+            <option value="Lo Barnechea">Lo Barnechea</option>
+            <option value="Lo Espejo">Lo Espejo</option>
+            <option value="Lo Prado">Lo Prado</option>
+            <option value="Macul">Macul</option>
+            <option value="Maipú">Maipú</option>
+            <option value="Ñuñoa">Ñuñoa</option>
+            <option value="Pedro Aguirre Cerda">Pedro Aguirre Cerda</option>
+            <option value="Ñuñoa">Ñuñoa</option>
+            <option value="Peñalolén">Peñalolén</option>
+            <option value="Providencia">Providencia</option>
+            <option value="Pudahuel">Pudahuel</option>
+            <option value="Quilicura">Quilicura</option>
+            <option value="Quinta Normal">Quinta Normal</option>
+            <option value="Recoleta">Recoleta</option>
+            <option value="Renca">Renca</option>
+            <option value="San Joaquín">San Joaquín</option>
+            <option value="San Miguel">San Miguel</option>
+            <option value="San Ramón">San Ramón</option>
+            <option value="Santiago">Santiago</option>
+            <option value="Vitacura">Vitacura</option>
           </Form.Select>
         </Col>
       </Row>
@@ -162,7 +170,11 @@ const DeliveryForm = ({ products }) => {
           </Form.Label>
         </Col>
         <Col>
-          <Form.Control type="text" name="direccion" />
+          <Form.Control
+            type="text"
+            name="direccion"
+            onChange={(e) => setDireccion(e.target.value)}
+          />
         </Col>
       </Row>
       <Row className="fila">

@@ -133,10 +133,15 @@ const Orders = () => {
                     <Col>
                       <Row>
                         <Col>
-                          <p onClick={(e) => restar(e, i)}>-</p>
+                          <p
+                            onClick={(e) => restar(e, i)}
+                            className="cursor-pointer"
+                          >
+                            -
+                          </p>
                         </Col>
                         <Col>{producto.cantidad}</Col>
-                        <Col>
+                        <Col className="pe-auto">
                           <p onClick={(e) => sumar(e, i)}>+</p>
                         </Col>
                       </Row>
@@ -151,7 +156,7 @@ const Orders = () => {
             </Row>
             <Button
               variant="primary"
-              className="rounded-pill w-25 "
+              className="rounded-pill w-25"
               onClick={pickup}
             >
               Retiro en local
