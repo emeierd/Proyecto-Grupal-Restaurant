@@ -6,10 +6,11 @@ import Reservations from "./views/Reservations";
 import Parties from "./views/Parties";
 import DrinksView from "./views/Drinks";
 import MenuView from "./views/Menu";
+import Contact from "./views/Contact";
 
 function App() {
   return (
-    <div>
+    <div className="bg-dark">
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -18,6 +19,7 @@ function App() {
           <Route path="fiestas" element={<Parties />} />
           <Route path="menu" element={<MenuView />} />
           <Route path="tragos" element={<DrinksView />} />
+          <Route path="contacto" element={<Contact />} />
         </Routes>
       </Router>
     </div>
