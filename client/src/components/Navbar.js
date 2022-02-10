@@ -42,20 +42,24 @@ const NavBar = () => {
             </Nav.Link>
           </Nav>
           <Nav>
-            <Nav.Link
-              as={Link}
-              to={
-                "https://api.whatsapp.com/send?phone=56999056122&text=Hola%20quiero%20hacer%20un%20pedido"
-              }
-            >
-              <FaWhatsapp fontSize={36} className="mx-3" />
-            </Nav.Link>
-            <Nav.Link as={Link} to={"https://www.facebook.com/"}>
-              <FaFacebookF fontSize={36} className="mx-3" />
-            </Nav.Link>
-            <Nav.Link as={Link} to={"https://www.instagram.com/"}>
-              <FaInstagram fontSize={36} className="mx-3" />
-            </Nav.Link>
+            <Nav.Item className="nav-link">
+              <a
+                href="https://api.whatsapp.com/send?phone=56999056122&text=Hola%20quiero%20hacer%20un%20pedido"
+                target="_blank" className="text-light"
+              >
+                <FaWhatsapp fontSize={36} className="mx-3" />
+              </a>
+            </Nav.Item>
+            <Nav.Item className="nav-link">
+              <a href="https://www.facebook.com/" target="_blank" className="text-light">
+                <FaFacebookF fontSize={36} className="mx-3" />
+              </a>
+            </Nav.Item>
+            <Nav.Item className="nav-link">
+              <a href="https://www.instagram.com/" target="_blank" className="text-light">
+                <FaInstagram fontSize={36} className="mx-3" />
+              </a>
+            </Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Container>
