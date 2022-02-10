@@ -5,7 +5,7 @@ import { Col, Container, Row } from "react-bootstrap";
 const Footer = () => {
   const today = new Date();
   return (
-    <footer class="mt-auto text-secondary bg-dark text-center">
+    <footer className="mt-auto text-secondary bg-dark text-center">
       <Container fluid className="py-5">
         <Row>
           <Col>
