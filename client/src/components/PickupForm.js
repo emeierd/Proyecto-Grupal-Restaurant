@@ -56,7 +56,7 @@ const DeliveryForm = ({ products }) => {
       name: name,
       lastName: lastName,
       email: email,
-      canal: "delivery",
+      canal: "retiro en local",
       productos: {
         ids: productsId,
         nombres: productsNames,
@@ -93,7 +93,7 @@ const DeliveryForm = ({ products }) => {
       <Row className="fila">
         <Col className="col-md-4">
           <Form.Label className="text-primary" htmlFor="phone">
-            Numero de contacto:
+            Numero de contacto
           </Form.Label>
         </Col>
         <Col>
@@ -109,60 +109,6 @@ const DeliveryForm = ({ products }) => {
         </Col>
         <Col>
           <Form.Control type="email" name="email" onChange={validate} />
-        </Col>
-      </Row>
-      <Row className="fila">
-        <Col className="col-md-4">
-          <Form.Label className="text-primary" htmlFor="comuna">
-            Comuna
-          </Form.Label>
-        </Col>
-        <Col>
-          <Form.Select type="comuna" name="comuna">
-            <option value="1">Cerrillos</option>
-            <option value="1">Cerro Navia</option>
-            <option value="1">Conchalí</option>
-            <option value="1">El Bosque</option>
-            <option value="1">Estación Central</option>
-            <option value="1">Huechuraba</option>
-            <option value="1">Independencia</option>
-            <option value="1">La Florida</option>
-            <option value="1">La Cisterna</option>
-            <option value="1">La Granja</option>
-            <option value="1">La Pintana</option>
-            <option value="1">La Reina</option>
-            <option value="1">Las Condes</option>
-            <option value="1">Lo Barnechea</option>
-            <option value="1">Lo Espejo</option>
-            <option value="1">Lo Prado</option>
-            <option value="1">Macul</option>
-            <option value="1">Maipú</option>
-            <option value="1">Ñuñoa</option>
-            <option value="1">Pedro Aguirre Cerda</option>
-            <option value="1">Ñuñoa</option>
-            <option value="1">Peñalolén</option>
-            <option value="1">Providencia</option>
-            <option value="1">Pudahuel</option>
-            <option value="1">Quilicura</option>
-            <option value="1">Quinta Normal</option>
-            <option value="1">Recoleta</option>
-            <option value="1">Renca</option>
-            <option value="1">San Joaquín</option>
-            <option value="1">San Miguel</option>
-            <option value="1">San Ramón</option>
-            <option value="1">Santiago</option>
-            <option value="1">Vitacura</option>
-          </Form.Select>
-        </Col>
-      </Row>
-      <Row className="fila">
-        <Col className="col-md-4">
-          <Form.Label className="text-primary" htmlFor="direccion">
-            Direccion
-          </Form.Label>
-        </Col>
-        <Col>
-          <Form.Control type="text" name="direccion" />
         </Col>
       </Row>
       <Row className="fila">

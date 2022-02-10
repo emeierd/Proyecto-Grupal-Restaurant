@@ -4,11 +4,13 @@ import { Col, Row, Button } from "react-bootstrap";
 import "../styles/css/estilos.css";
 import { Link } from "react-router-dom";
 import DeliveryForm from "./DeliveryForm";
+import PickupForm from "./PickupForm";
 
 const Orders = () => {
   const [pizzas, setPizzas] = useState([]);
   const [productos, setProductos] = useState([]);
   const [deliverySelect, setDeliverySelect] = useState(false);
+  const [pickupSelect, setPickupSelect] = useState(false);
   useEffect(() => {
     const getPizzas = async () => {
       try {
@@ -65,6 +67,11 @@ const Orders = () => {
   const delivery = (e) => {
     e.preventDefault();
     setDeliverySelect(true);
+  };
+
+  const pickup = (e) => {
+    e.preventDefault();
+    setPickupSelect(true);
   };
 
   return (
@@ -127,10 +134,9 @@ const Orders = () => {
                 ))
               : null}
             <Button
-              as={Link}
-              to={"/"}
               variant="primary"
               className="rounded-pill w-25 "
+              onClick={pickup}
             >
               Retiro en local
             </Button>
@@ -150,6 +156,7 @@ const Orders = () => {
               Volver
             </Button>
           </Row>
+          {pickupSelect && <PickupForm products={productos} />}
           {deliverySelect && <DeliveryForm products={productos} />}
         </Col>
       </Row>
