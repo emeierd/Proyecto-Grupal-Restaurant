@@ -5,7 +5,7 @@ import Drinks from "../components/Drinks";
 
 const DrinksView = () => {
   return (
-    <div>
+    <div className="bg-dark">
       <NavBar />
       <Drinks />
       <Footer />

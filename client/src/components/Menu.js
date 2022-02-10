@@ -15,7 +15,6 @@ const Menu = () => {
       }
     };
     getPizzas().then(({ data }) => {
-      console.log(data);
       setPizzas(data);
     });
   }, []);
