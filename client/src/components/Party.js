@@ -3,6 +3,7 @@ import DatePicker, { registerLocale } from "react-datepicker";
 import es from "date-fns/locale/es";
 import "react-datepicker/dist/react-datepicker.css";
 import FiestaForm from "./FiestaForm";
+import "../styles/css/estilos.css";
 registerLocale("es", es);
 
 const Party = () => {
@@ -17,6 +18,7 @@ const Party = () => {
   return (
     <div className="bg-dark text-center">
       <DatePicker
+        className="fila date-picker"
         selected={startDate}
         onChange={(date) => onDatePick(date)}
         minDate={tomorrow}

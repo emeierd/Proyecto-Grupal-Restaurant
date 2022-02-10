@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import validation from "./actions/validation";
 import { Button, Col, Form, FormLabel, Row } from "react-bootstrap";
+import "../styles/css/estilos.css";
 
 const FiestaForm = ({ fecha }) => {
   const [nameValidation, setNameValidation] = useState({
@@ -75,43 +76,72 @@ const FiestaForm = ({ fecha }) => {
         <Col className="bg-dark text-center"></Col>
         <Col md="auto" className="bg-dark text-center">
           <Form className="register bg-dark text-center" onSubmit={onSubmit}>
-            <Form.Group className="col-md-auto">
-              <FormLabel className="text-primary">Personas</FormLabel>{" "}
-              {personasValidation.text}
-              <Form.Control
-                type={"number"}
-                name="personas"
-                defaultValue={10}
-                min={"10"}
-                max={"50"}
-                onChange={validate}
-              />
-            </Form.Group>
-            <div className="text-primary bg-dark">
-              <label className="text-primary" htmlFor="name">
-                Name
-              </label>{" "}
-              {nameValidation.text}
-            </div>
-            <input type="text" name="name" onChange={validate} />
-            <div>
-              <label className="text-primary" htmlFor="lastName">
-                Lastname
-              </label>{" "}
-              {lastNameValidation.text}
-            </div>
-            <input type="text" name="lastName" onChange={validate} />
-            <div>
-              <label className="text-primary" htmlFor="email">
-                Email
-              </label>{" "}
-              {emailValidation.text}
-            </div>
-            <input type="email" name="email" onChange={validate} />
-            <br />
-            <Button variant="outline-primary" type="submit">
-              Solicitar reserva
-            </Button>
+            <Row className="fila">
+              <Col className="col-md-4">
+                <FormLabel className="text-primary">Personas</FormLabel>{" "}
+                {personasValidation.text}
+              </Col>
+              <Col className="columna">
+                <Form.Control
+                  type={"number"}
+                  name="personas"
+                  defaultValue={10}
+                  min={"10"}
+                  max={"50"}
+                  onChange={validate}
+                />{" "}
+              </Col>
+            </Row>
+            <Row className="fila">
+              <Col className="col-md-4">
+                <Form.Label className="text-primary" htmlFor="name">
+                  Name
+                </Form.Label>
+                {/* <label className="text-primary" htmlFor="name">
+                  Name
+                </label> */}{" "}
+                {nameValidation.text}
+              </Col>
+              <Col>
+                {/* <Form.Control type="text" name="name" onChange={validate} /> */}
+                <input type="text" name="name" onChange={validate} />
+              </Col>
+            </Row>
+            <Row className="fila">
+              <Col className="col-md-4">
+                <Form.Label className="text-primary" htmlFor="lastName">
+                  Lastname
+                </Form.Label>
+                {/* <label className="text-primary" htmlFor="lastName">
+                  Lastname
+                </label> */}{" "}
+                {lastNameValidation.text}
+              </Col>
+              <Col>
+                <Form.Control type="text" name="lastName" onChange={validate} />
+                {/* <input type="text" name="lastName" onChange={validate} /> */}
+              </Col>
+            </Row>
+            <Row className="fila">
+              <Col className="col-md-4">
+                <Form.Label className="text-primary" htmlFor="lastName">
+                  Email
+                </Form.Label>
+                {/* <label className="text-primary" htmlFor="email">
+                  Email
+                </label> */}{" "}
+                {emailValidation.text}
+              </Col>
+              <Col>
+                <Form.Control type="email" name="email" onChange={validate} />
+                {/* <input type="email" name="email" onChange={validate} /> */}
+              </Col>
+            </Row>
+            <Row className="fila">
+              <Button variant="outline-primary row-2" type="submit">
+                Solicitar reserva
+              </Button>
+            </Row>
           </Form>
         </Col>
         <Col className="bg-dark text-center"></Col>
