@@ -20,7 +20,7 @@ const Footer = () => {
               Estamos Abiertos:
             </p>
             <p className="text-primary fs-4">
-              Lunes - Domingo: 00:00hrs - 02:00hrs
+              Lunes - Domingo: 12:00 PM - 02:00 AM
             </p>
           </Col>
         </Row>

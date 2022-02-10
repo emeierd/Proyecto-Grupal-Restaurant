@@ -156,7 +156,7 @@ const Orders = () => {
             </Row>
             <Button
               variant="primary"
-              className="rounded-pill w-25 "
+              className="rounded-pill w-25"
               onClick={pickup}
             >
               Retiro en local
