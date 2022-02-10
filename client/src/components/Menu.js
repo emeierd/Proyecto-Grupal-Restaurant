@@ -5,15 +5,6 @@ import "../styles/css/estilos.css";
 
 const Menu = () => {
   const [pizzas, setPizzas] = useState([]);
-  const getPizzas = async (data) => {
-    try {
-      await axios.get("http://localhost:8000/api/pizzas", data);
-      return { success: true };
-    } catch (err) {
-      console.error(err);
-      return { success: false };
-    }
-  };
   useEffect(() => {
     const getPizzas = async () => {
       try {
@@ -33,7 +24,7 @@ const Menu = () => {
     <div>
       <h3 className="text-primary text-center">Nuestras Pizzas:</h3>
       <Row className="fila">
-        {pizzas.map(({ _id, title, price, sauce, mass, size }) => (
+        {pizzas.map(({ _id, title, price, sauce, mass, size, products }) => (
           <>
             <Row>
               <Col className="col-lg-4"></Col>
@@ -45,7 +36,11 @@ const Menu = () => {
             <Row>
               <Col className="col-lg-4"></Col>
               <Col className="text-secondary fila col-lg-auto">
-                (salsa: {sauce}, masa: {mass}, tamano: {size})
+                (salsa: {sauce}, masa: {mass}, tamaño: {size}) <br></br>
+                Ingredientes:
+                {products.map(({ title }) => (
+                  <> {title}, </>
+                ))}
               </Col>
               <Col className="col-lg-4"></Col>
             </Row>
