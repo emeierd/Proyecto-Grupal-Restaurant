@@ -9,8 +9,8 @@ const ReserveSection = () => {
         <Col md={6} className="reserves-cover"></Col>
         <Col md={6}>
           <Container fluid className="py-5 px-5 reserves-text">
-            <h1 className="display-5 fw-bold">¿Ya te dió hambre?</h1>
-            <p className="col-md-8 fs-4">Revisa nuestro menú.</p>
+            <h1 className="display-5 fw-bold">¿Listos para visitarnos?</h1>
+            <p className="col-md-8 fs-4">Ven a vernos! No es necesario reservar, pero estaremos felices de guardarte un lugar.</p>
             <div className="col-6 col-md-3 d-grid gap-2">
               <Button
                 as={Link}
@@ -18,7 +18,7 @@ const ReserveSection = () => {
                 variant="outline-light"
                 className="rounded-pill"
               >
-                Reservas
+                Reserva ahora
               </Button>
             </div>
           </Container>
