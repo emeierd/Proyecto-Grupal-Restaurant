@@ -1,0 +1,14 @@
+@use "../custom" as *;
+
+.aboutus {
+  background-color: $gray-500;
+  .aboutus-cover {
+    background-image: url("../../assets/aboutus.jpeg");
+    background-size: cover;
+    min-height: 50vh;
+  }
+
+  .aboutus-text {
+    min-height: 50vh;
+  }
+}

@@ -24,7 +24,7 @@
   --bs-gray-200: #e9ecef;
   --bs-gray-300: #dee2e6;
   --bs-gray-400: #ced4da;
-  --bs-gray-500: #adb5bd;
+  --bs-gray-500: #677576;
   --bs-gray-600: #6c757d;
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
@@ -2576,10 +2576,10 @@ textarea.form-control-lg {
   pointer-events: none;
 }
 .form-range:disabled::-webkit-slider-thumb {
-  background-color: #adb5bd;
+  background-color: #677576;
 }
 .form-range:disabled::-moz-range-thumb {
-  background-color: #adb5bd;
+  background-color: #677576;
 }
 
 .form-floating {
@@ -3681,7 +3681,7 @@ textarea.form-control-lg {
   background-color: #963826;
 }
 .dropdown-item.disabled, .dropdown-item:disabled {
-  color: #adb5bd;
+  color: #677576;
   pointer-events: none;
   background-color: transparent;
 }
@@ -3722,7 +3722,7 @@ textarea.form-control-lg {
   background-color: #963826;
 }
 .dropdown-menu-dark .dropdown-item.disabled, .dropdown-menu-dark .dropdown-item:disabled {
-  color: #adb5bd;
+  color: #677576;
 }
 .dropdown-menu-dark .dropdown-divider {
   border-color: rgba(0, 0, 0, 0.15);
@@ -3731,7 +3731,7 @@ textarea.form-control-lg {
   color: #dee2e6;
 }
 .dropdown-menu-dark .dropdown-header {
-  color: #adb5bd;
+  color: #677576;
 }
 
 .btn-group,
@@ -11160,7 +11160,7 @@ body {
 }
 
 .reserves .reserves-cover {
-  background-image: url("../../assets/reserves.jpeg");
+  background-image: url("https://raw.githubusercontent.com/edureyesm/Proyecto-Grupal-Restaurant/master/client/src/assets/reserves.jpeg");
   background-size: cover;
   min-height: 50vh;
 }
@@ -11177,18 +11177,30 @@ body {
 }
 
 .drink {
-  background-image: url("../../assets/drinks.jpeg");
+  background-image: url("https://raw.githubusercontent.com/edureyesm/Proyecto-Grupal-Restaurant/master/client/src/assets/drinks.jpeg");
   background-size: cover;
   min-height: 50vh;
   padding: 3.5rem 0 0 1rem;
 }
 
 .party .party-cover {
-  background-image: url("../../assets/party.jpeg");
+  background-image: url("https://raw.githubusercontent.com/edureyesm/Proyecto-Grupal-Restaurant/master/client/src/assets/party.jpeg");
   background-size: cover;
   min-height: 50vh;
 }
 .party .party-text {
+  min-height: 50vh;
+}
+
+.aboutus {
+  background-color: #677576;
+}
+.aboutus .aboutus-cover {
+  background-image: url("../../assets/aboutus.jpeg");
+  background-size: cover;
+  min-height: 50vh;
+}
+.aboutus .aboutus-text {
   min-height: 50vh;
 }
 
