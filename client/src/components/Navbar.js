@@ -22,14 +22,9 @@ const NavBar = () => {
         <Navbar.Toggle />
         <Navbar.Collapse>
           <Nav className="me-auto">
-            <NavDropdown title="Pedir" menuVariant="dark">
-              <NavDropdown.Item as={Link} to={"/"}>
-                Retiro en Local
-              </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to={"/"}>
-                Delivery
-              </NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link as={Link} to={"/order"}>
+              Pedir
+            </Nav.Link>
             <Nav.Link as={Link} to={"/menu"}>
               Menu
             </Nav.Link>
