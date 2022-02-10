@@ -46,11 +46,22 @@ const NavBar = () => {
               Contacto
             </Nav.Link>
           </Nav>
-          <Navbar.Text className="d-flex">
-              <FaWhatsapp fontSize={27} className="mx-3" />
-              <FaFacebookF fontSize={27} className="mx-3" />
-              <FaInstagram fontSize={27} className="mx-3" />
-            </Navbar.Text>
+          <Nav>
+            <Nav.Link
+              as={Link}
+              to={
+                "https://api.whatsapp.com/send?phone=56999056122&text=Hola%20quiero%20hacer%20un%20pedido"
+              }
+            >
+              <FaWhatsapp fontSize={36} className="mx-3" />
+            </Nav.Link>
+            <Nav.Link as={Link} to={"https://www.facebook.com/"}>
+              <FaFacebookF fontSize={36} className="mx-3" />
+            </Nav.Link>
+            <Nav.Link as={Link} to={"https://www.instagram.com/"}>
+              <FaInstagram fontSize={36} className="mx-3" />
+            </Nav.Link>
+          </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
