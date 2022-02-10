@@ -95,7 +95,7 @@ const FiestaForm = ({ fecha }) => {
             <Row className="fila">
               <Col className="col-md-4">
                 <Form.Label className="text-primary" htmlFor="name">
-                  Name
+                  Nombre
                 </Form.Label>{" "}
                 {nameValidation.text}
               </Col>
@@ -106,7 +106,7 @@ const FiestaForm = ({ fecha }) => {
             <Row className="fila">
               <Col className="col-md-4">
                 <Form.Label className="text-primary" htmlFor="lastName">
-                  Lastname
+                  Apellido
                 </Form.Label>{" "}
                 {lastNameValidation.text}
               </Col>
