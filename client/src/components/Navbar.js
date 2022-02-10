@@ -29,7 +29,7 @@ const NavBar = () => {
                 Delivery
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link as={Link} to={"/"}>
+            <Nav.Link as={Link} to={"/menu"}>
               Menu
             </Nav.Link>
             <Nav.Link as={Link} to={"/reservas"}>
