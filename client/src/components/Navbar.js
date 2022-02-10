@@ -12,7 +12,7 @@ const NavBar = () => {
       sticky="top"
       className="navbar"
     >
-      <Container fluid>
+      <Container fluid className="fs-5">
         <Navbar.Brand>
           <Link to={"/"}>
             <img src={images.logo} alt="" height="80px" />{" "}
