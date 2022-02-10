@@ -11204,4 +11204,24 @@ body {
   min-height: 50vh;
 }
 
+.contact {
+  min-height: 50vh;
+  padding-top: 5rem;
+}
+
+.drinkview {
+  min-height: 50vh;
+  padding-top: 5rem;
+}
+
+.menuview {
+  min-height: 50vh;
+  padding-top: 5rem;
+}
+
+.partyview {
+  min-height: 50vh;
+  padding-top: 5rem;
+}
+
 /*# sourceMappingURL=style.css.map */
