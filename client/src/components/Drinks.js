@@ -34,7 +34,7 @@ const Drinks = () => {
             </Row>
             <Row>
               <Col className="col-lg-4"></Col>
-              <Col className="text-secondary fila col-lg-auto">{size}</Col>
+              <Col className="text-secondary fila col-lg-auto"> {size}</Col>
               <Col className="col-lg-4"></Col>
             </Row>
           </>
