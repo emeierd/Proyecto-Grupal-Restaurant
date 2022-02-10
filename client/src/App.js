@@ -4,7 +4,7 @@ import NotFound from "./views/NotFound";
 import Home from "./views/Home";
 import Reservations from "./views/Reservations";
 import Parties from "./views/Parties";
-import Drinks from "./components/Drinks";
+import DrinksView from "./views/Drinks";
 import MenuView from "./views/Menu";
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
           <Route path="reservas" element={<Reservations />} />
           <Route path="fiestas" element={<Parties />} />
           <Route path="menu" element={<MenuView />} />
-          <Route path="tragos" element={<Drinks />} />
+          <Route path="tragos" element={<DrinksView />} />
         </Routes>
       </Router>
     </div>

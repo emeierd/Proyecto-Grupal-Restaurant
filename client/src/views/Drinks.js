@@ -1,7 +1,16 @@
-import React from 'react';
+import React from "react";
+import Footer from "../components/Footer";
+import NavBar from "../components/Navbar";
+import Drinks from "../components/Drinks";
 
-const Drinks = () => {
-  return <div></div>;
+const DrinksView = () => {
+  return (
+    <div>
+      <NavBar />
+      <Drinks />
+      <Footer />
+    </div>
+  );
 };
 
-export default Drinks;
+export default DrinksView;
