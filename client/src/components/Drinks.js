@@ -20,7 +20,7 @@ const Drinks = () => {
   }, []);
 
   return (
-    <div>
+    <div className="drinkview bg-dark text-center">
       <h3 className="text-primary text-center">Nuestros Tragos:</h3>
       <Row className="fila">
         {tragos.map(({ _id, title, price, size }) => (

@@ -20,7 +20,7 @@ const Menu = () => {
   }, []);
 
   return (
-    <div>
+    <div className="menuview bg-dark text-center">
       <h3 className="text-primary text-center">Nuestras Pizzas:</h3>
       <Row className="fila">
         {pizzas.map(({ _id, title, price, sauce, mass, size, products }) => (

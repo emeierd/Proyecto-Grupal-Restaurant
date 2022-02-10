@@ -16,7 +16,7 @@ const Party = () => {
   };
 
   return (
-    <div className="bg-dark text-center">
+    <div className="bg-dark text-center partyview">
       <DatePicker
         className="fila date-picker"
         selected={startDate}
