@@ -16,8 +16,8 @@ const Home = () => {
       <Cover />
       <PromoCarousel />
       <MenuSection />
-      <ReserveSection />
       <DrinkSection />
+      <ReserveSection />
       <PartySection />
       <AboutUs />
       <Footer />
