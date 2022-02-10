@@ -46,6 +46,12 @@ const Orders = () => {
     }
   };
 
+  const getProductos = (products) => {
+    let productos = [];
+    products.products.forEach((item) => productos.push(item.title));
+    return productos.join(", ");
+  };
+
   const restar = (e, i) => {
     e.preventDefault();
     let prods = productos.slice();
@@ -76,12 +82,15 @@ const Orders = () => {
     setPickupSelect(true);
   };
 
+  let total = 0;
+  productos.forEach((item) => (total += Number(item.precioTotal)));
+
   return (
     <div>
       <h3 className="text-primary text-center">Nuestras Pizzas:</h3>
       <Row className="fila">
         <Col>
-          {pizzas.map(({ _id, title, price, sauce, mass, size }) => (
+          {pizzas.map(({ _id, title, price, sauce, mass, size, products }) => (
             <>
               <Row>
                 <Col className="text-primary" key={_id}>
@@ -99,10 +108,11 @@ const Orders = () => {
                 </Col>
               </Row>
               <Row>
-                <Col className="text-secondary fila col-lg-auto">
-                  (salsa: {sauce}, masa: {mass}, tamaño: {size})
-                </Col>
                 <Col className="col-lg-4"></Col>
+                <Col className="text-secondary fila col-lg-auto">
+                  (salsa: {sauce}, masa: {mass}, tamaño: {size}) <br></br>
+                  Ingredientes: {getProductos({ products })}
+                </Col>
                 <Col className="col-lg-4"></Col>
               </Row>
             </>
@@ -135,6 +145,10 @@ const Orders = () => {
                   </Row>
                 ))
               : null}
+
+            <Row>
+              <Col>Total: $ {total}</Col>
+            </Row>
             <Button
               variant="primary"
               className="rounded-pill w-25 "
