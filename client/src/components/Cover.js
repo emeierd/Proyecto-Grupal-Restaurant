@@ -14,8 +14,7 @@ const Cover = () => {
           <Button
             as={Link}
             to={"/pickup"}
-            variant="primary"
-            className="rounded-pill"
+            className="rounded-pill custom-primary"
           >
             Retiro en local
           </Button>

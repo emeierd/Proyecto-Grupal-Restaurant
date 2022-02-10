@@ -17,7 +17,6 @@ const Home = () => {
       <NavBar />
       <Cover />
       <PromoCarousel />
-      <Orders/>
       <MenuSection />
       <ReserveSection />
       <DrinkSection />

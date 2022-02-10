@@ -11124,7 +11124,7 @@ body {
 }
 
 .navbar {
-  height: 15vh;
+  min-height: 15vh;
 }
 
 .cover {
