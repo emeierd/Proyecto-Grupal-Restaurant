@@ -10,7 +10,7 @@ import Contact from "./views/Contact";
 
 function App() {
   return (
-    <div className="bg-dark">
+    <div>
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
