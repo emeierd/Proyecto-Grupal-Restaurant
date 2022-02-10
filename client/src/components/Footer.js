@@ -29,19 +29,20 @@ const Footer = () => {
       <Container fluid className="py-1">
         <Row className="py-3">
           <Col>
-            <Link
-              to={
-                "https://api.whatsapp.com/send?phone=56999056122&text=Hola%20quiero%20hacer%20un%20pedido"
-              }
+            <a
+              href="https://api.whatsapp.com/send?phone=56999056122&text=Hola%20quiero%20hacer%20un%20pedido"
+              target="_blank"
             >
-              <FaWhatsapp fontSize={27} className="mx-3" />
-            </Link>
-            <Link to={"https://www.facebook.com/"}>
-              <FaFacebookF fontSize={27} className="mx-3" />
-            </Link>
-            <Link to={"https://www.instagram.com/"}>
-              <FaInstagram fontSize={27} className="mx-3" />
-            </Link>
+              <FaWhatsapp fontSize={36} className="mx-3" />
+            </a>
+
+            <a href="https://www.facebook.com/" target="_blank">
+              <FaFacebookF fontSize={36} className="mx-3" />
+            </a>
+
+            <a href="https://www.instagram.com/" target="_blank">
+              <FaInstagram fontSize={36} className="mx-3" />
+            </a>
           </Col>
         </Row>
         <Row>
